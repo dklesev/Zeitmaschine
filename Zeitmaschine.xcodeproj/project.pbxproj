@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A002A0186FB6B30016A337 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0029F186FB6B30016A337 /* Model.m */; };
 		84EEA9F7186EF51500977BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEA9F6186EF51500977BB6 /* Foundation.framework */; };
 		84EEA9F9186EF51500977BB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEA9F8186EF51500977BB6 /* CoreGraphics.framework */; };
 		84EEA9FB186EF51500977BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEA9FA186EF51500977BB6 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84A0029E186FB6B30016A337 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		84A0029F186FB6B30016A337 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		84EEA9F3186EF51500977BB6 /* Zeitmaschine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zeitmaschine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEA9F6186EF51500977BB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84EEA9F8186EF51500977BB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +117,8 @@
 		84EEA9FC186EF51500977BB6 /* Zeitmaschine */ = {
 			isa = PBXGroup;
 			children = (
+				84A0029E186FB6B30016A337 /* Model.h */,
+				84A0029F186FB6B30016A337 /* Model.m */,
 				84EEAA05186EF51500977BB6 /* AppDelegate.h */,
 				84EEAA06186EF51500977BB6 /* AppDelegate.m */,
 				84EEAA08186EF51500977BB6 /* Main_iPhone.storyboard */,
@@ -256,6 +261,7 @@
 				84EEAA10186EF51500977BB6 /* ViewController.m in Sources */,
 				84EEAA07186EF51500977BB6 /* AppDelegate.m in Sources */,
 				84EEAA03186EF51500977BB6 /* main.m in Sources */,
+				84A002A0186FB6B30016A337 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +480,7 @@
 				84EEAA2A186EF51500977BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84EEAA2B186EF51500977BB6 /* Build configuration list for PBXNativeTarget "ZeitmaschineTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				84EEAA2D186EF51500977BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
