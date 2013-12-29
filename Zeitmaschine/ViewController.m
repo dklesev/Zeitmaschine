@@ -7,14 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "HTMLParser.h"
 
 @interface ViewController () <UIWebViewDelegate>
 @property (strong, nonatomic) Model *model;
 @property (weak, nonatomic) IBOutlet UIWebView *WebView;
 @property (strong, nonatomic) NSMutableData *webData;
+@property (strong, nonatomic) NSMutableData *data;
 @property (strong, nonatomic) NSString* year;
 @property (strong, nonatomic) NSString* month;
 @property (strong, nonatomic) NSMutableString* url;
+@property (strong, nonatomic) HTMLParser* parser;
 
 @end
 
@@ -26,6 +29,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self.WebView setDelegate:self];
     self.url = [[NSMutableString alloc] initWithString:@"http://de.wikipedia.org/wiki/"];
+    self.data = [[NSMutableData alloc] init];
 }
 - (IBAction)dateSelected:(UIDatePicker*)sender {
     
@@ -37,7 +41,6 @@
     [dateFormatter setDateFormat:@"MMMM"];
     
     self.month = [dateFormatter stringFromDate:[sender date]];
-    NSLog(@"Month: %@", self.month);
     
     [self.url appendString:self.year];
     
@@ -57,7 +60,28 @@
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    [self.WebView loadData:self.webData MIMEType: @"text/html" textEncodingName: @"UTF-8" baseURL:nil];
+    NSError *error = nil;
+    self.parser = [[HTMLParser alloc] initWithData:self.webData error:nil];
+    if (error) {
+        NSLog(@"Error: %@", error);
+    }
+    HTMLNode *bodyNode = [self.parser body];
+    NSArray *inputNodes = [bodyNode findChildTags:@"li"];
+    
+    NSString* html_head = @"<!DOCTYPE html><html><head></head><body><ul>";
+    [self.data appendData:[html_head dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    for (HTMLNode *inputNode in inputNodes) {
+        if ([[[inputNode firstChild] getAttributeNamed:@"title"] isEqualToString:@"1. Januar"]) {
+            //NSLog(@"%@", [inputNode rawContents]);
+            [self.data appendData:[[inputNode rawContents] dataUsingEncoding:NSUTF8StringEncoding]];
+        }
+    }
+    
+    NSString* html_tail = @"</ul></body>";
+    [self.data appendData:[html_tail dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [self.WebView loadData:self.data MIMEType: @"text/html" textEncodingName: @"UTF-8" baseURL:nil];
 }
 
 

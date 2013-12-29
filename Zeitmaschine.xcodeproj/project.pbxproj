@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		84A002A0186FB6B30016A337 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0029F186FB6B30016A337 /* Model.m */; };
+		84A002A6186FC8D00016A337 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A002A3186FC8D00016A337 /* HTMLNode.m */; };
+		84A002A7186FC8D00016A337 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A002A5186FC8D00016A337 /* HTMLParser.m */; };
+		84A002A9186FCAD60016A337 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A002A8186FCAD60016A337 /* libxml2.dylib */; };
 		84EEA9F7186EF51500977BB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEA9F6186EF51500977BB6 /* Foundation.framework */; };
 		84EEA9F9186EF51500977BB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEA9F8186EF51500977BB6 /* CoreGraphics.framework */; };
 		84EEA9FB186EF51500977BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEA9FA186EF51500977BB6 /* UIKit.framework */; };
@@ -38,6 +41,11 @@
 /* Begin PBXFileReference section */
 		84A0029E186FB6B30016A337 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		84A0029F186FB6B30016A337 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		84A002A2186FC8D00016A337 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLNode.h; path = "../../../Downloads/Objective-C-HMTL-Parser-master/HTMLNode.h"; sourceTree = "<group>"; };
+		84A002A3186FC8D00016A337 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = "../../../Downloads/Objective-C-HMTL-Parser-master/HTMLNode.m"; sourceTree = "<group>"; };
+		84A002A4186FC8D00016A337 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLParser.h; path = "../../../Downloads/Objective-C-HMTL-Parser-master/HTMLParser.h"; sourceTree = "<group>"; };
+		84A002A5186FC8D00016A337 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLParser.m; path = "../../../Downloads/Objective-C-HMTL-Parser-master/HTMLParser.m"; sourceTree = "<group>"; };
+		84A002A8186FCAD60016A337 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		84EEA9F3186EF51500977BB6 /* Zeitmaschine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zeitmaschine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEA9F6186EF51500977BB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84EEA9F8186EF51500977BB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A002A9186FCAD60016A337 /* libxml2.dylib in Frameworks */,
 				84EEA9F9186EF51500977BB6 /* CoreGraphics.framework in Frameworks */,
 				84EEA9FB186EF51500977BB6 /* UIKit.framework in Frameworks */,
 				84EEA9F7186EF51500977BB6 /* Foundation.framework in Frameworks */,
@@ -106,6 +115,7 @@
 		84EEA9F5186EF51500977BB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84A002A8186FCAD60016A337 /* libxml2.dylib */,
 				84EEA9F6186EF51500977BB6 /* Foundation.framework */,
 				84EEA9F8186EF51500977BB6 /* CoreGraphics.framework */,
 				84EEA9FA186EF51500977BB6 /* UIKit.framework */,
@@ -117,6 +127,10 @@
 		84EEA9FC186EF51500977BB6 /* Zeitmaschine */ = {
 			isa = PBXGroup;
 			children = (
+				84A002A2186FC8D00016A337 /* HTMLNode.h */,
+				84A002A3186FC8D00016A337 /* HTMLNode.m */,
+				84A002A4186FC8D00016A337 /* HTMLParser.h */,
+				84A002A5186FC8D00016A337 /* HTMLParser.m */,
 				84A0029E186FB6B30016A337 /* Model.h */,
 				84A0029F186FB6B30016A337 /* Model.m */,
 				84EEAA05186EF51500977BB6 /* AppDelegate.h */,
@@ -258,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A002A6186FC8D00016A337 /* HTMLNode.m in Sources */,
+				84A002A7186FC8D00016A337 /* HTMLParser.m in Sources */,
 				84EEAA10186EF51500977BB6 /* ViewController.m in Sources */,
 				84EEAA07186EF51500977BB6 /* AppDelegate.m in Sources */,
 				84EEAA03186EF51500977BB6 /* main.m in Sources */,
@@ -400,6 +416,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zeitmaschine/Zeitmaschine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Zeitmaschine/Zeitmaschine-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -413,6 +434,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Zeitmaschine/Zeitmaschine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Zeitmaschine/Zeitmaschine-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
