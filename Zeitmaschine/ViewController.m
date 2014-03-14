@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HTMLParser.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) Model *model;

@@ -26,6 +26,7 @@
 		84EEAA1B186EF51500977BB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEA9FA186EF51500977BB6 /* UIKit.framework */; };
 		84EEAA23186EF51500977BB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84EEAA21186EF51500977BB6 /* InfoPlist.strings */; };
 		84EEAA25186EF51500977BB6 /* ZeitmaschineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEAA24186EF51500977BB6 /* ZeitmaschineTests.m */; };
+		84F35D2018D3533A005727A6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84F35D1F18D3533A005727A6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		84EEAA20186EF51500977BB6 /* ZeitmaschineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZeitmaschineTests-Info.plist"; sourceTree = "<group>"; };
 		84EEAA22186EF51500977BB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84EEAA24186EF51500977BB6 /* ZeitmaschineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZeitmaschineTests.m; sourceTree = "<group>"; };
+		84F35D1F18D3533A005727A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		84EEA9EA186EF51500977BB6 = {
 			isa = PBXGroup;
 			children = (
+				84F35D1F18D3533A005727A6 /* README.md */,
 				84EEA9FC186EF51500977BB6 /* Zeitmaschine */,
 				84EEAA1E186EF51500977BB6 /* ZeitmaschineTests */,
 				84EEA9F5186EF51500977BB6 /* Frameworks */,
@@ -252,6 +255,7 @@
 			files = (
 				84EEAA0D186EF51500977BB6 /* Main_iPad.storyboard in Resources */,
 				84EEAA12186EF51500977BB6 /* Images.xcassets in Resources */,
+				84F35D2018D3533A005727A6 /* README.md in Resources */,
 				84EEAA0A186EF51500977BB6 /* Main_iPhone.storyboard in Resources */,
 				84EEAA01186EF51500977BB6 /* InfoPlist.strings in Resources */,
 			);
